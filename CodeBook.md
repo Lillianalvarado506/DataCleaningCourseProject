@@ -100,7 +100,7 @@ The variables in our dataset were:
 [67] "frequencyBodyGyroscopeJerkMagnitudeMean"  : mean magnitude of the frequency domain signals of the angular velocity of the body during jerk signals    
 [68] "frequencyBodyGyroscopeJerkMagnitudeStdDev" : std deviation of the frequency domain signals of the magnitude of the angular velocity of the body during jerk signals
 
-In the variable names, the standard deviation is abbreviated StdDev. Those measures with accelerometer in the name indicated acceleration readings and those with gyroscope in the name reference to angular velocity. The differentiation into signals from the body and gravity are maintained as in the original feature descriptors. Jerk signals are described with descriptor during jerk signals. I have used indicated those derived from Fast Fourier Transforms (FFTs) as pertaining to frequency domain signals and those where the magnitude (See the original features_info.txt for more information.)
+In the variable names, the standard deviation is abbreviated StdDev. Those measures with accelerometer in the name indicated acceleration readings and those with gyroscope in the name reference to angular velocity. The differentiation into signals from the body and gravity are maintained as in the original feature descriptors. 
 
 I want to comment on my choices for descriptive variables names. For tidy data, the course stresses it is best to keep variable names clear but avoid periods, underscores, or whitespaces. In this case I have chosen to use camel case so the long names are more readable. I have thus, avoided periods, underscores, dashes, spaces.
 
