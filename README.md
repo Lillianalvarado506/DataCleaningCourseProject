@@ -11,3 +11,9 @@ Contains the files for the Project to fulfill requirements for Coursera's Gettin
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+#Reading the tidy file:
+The tidy data set produced can be read by
+
+dataRead <- read.table("tidyData.txt", header = TRUE)
