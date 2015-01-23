@@ -8,6 +8,12 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 A description of the data can be found in:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
+The data was downloaded in six files: X_test, y_test, subject_test, X_train, y_train and subject_train.
+The files were then bound together appropriately into one file called "allData, resulting in 10299 observations and 563 variables.
+This file, called "allData" was subsetted to include only the measures for means and standard deviations. This resulted in a smaller file called "totalData" that contained 10299 observations and 68 variables.
+Finally, the "totalData" file was used to create a "tidyData" file that contained only the means of each of the variables by subject and activity. this last step was done by using "melt" and "dcast" from the reshape2 package.
+
+
 #Variables
 
 There are 68 variables in our dataset. 
