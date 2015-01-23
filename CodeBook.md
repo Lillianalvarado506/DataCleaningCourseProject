@@ -20,11 +20,11 @@ There are 68 variables in our dataset.
 The first variable is "subject" and has values from 1 to 30 indicating the different subjects from which data was collected.
 The second variable is "activity" and includes 6 types of activities:
  
-walking
-walking_upstairs
-walking_downstairs
-sitting
-standing
+walking,
+walking_upstairs,
+walking_downstairs,
+sitting,
+standing,
 laying
 
 Accelerometer and gyroscope readings were analyzed for six types of activities. From the raw dataset, only the means and standard deviations where chosen, resulting in 66 different variables. 
@@ -33,10 +33,10 @@ The variables in our dataset were:
 
  [1] "subject"                                      
  [2] "activity"                                     
- [3] "timeBodyAccelerometerMeanX"   : mean acceleration of the body in x-axis                
- [4] "timeBodyAccelerometerMeanY"   : mean acceleration of the body in y-axis                
- [5] "timeBodyAccelerometerMeanZ"   : mean acceleration of the body in z-axis              
- [6] "timeBodyAccelerometerStdDevX" : std deviation of acceleration of the body in x-axis              
+ [3] "timeBodyAccelerometerMeanX"   : mean acceleration of the body in x-axis of the phone                
+ [4] "timeBodyAccelerometerMeanY"   : mean acceleration of the body in y-axis of the phone                
+ [5] "timeBodyAccelerometerMeanZ"   : mean acceleration of the body in z-axis of the phone             
+ [6] "timeBodyAccelerometerStdDevX" : std deviation of acceleration of the body in x-axis of the phone              
  [7] "timeBodyAccelerometerStdDevY" : std deviation of acceleration of the body in y-axis of the phone                
  [8] "timeBodyAccelerometerStdDevZ" : std deviation of acceleration of the body in z-axis of the phone                
  [9] "timeGravityAccelerometerMeanX": mean acceleration of gravity in x-axis of the phone               
