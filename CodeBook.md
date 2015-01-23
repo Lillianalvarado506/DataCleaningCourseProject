@@ -9,21 +9,22 @@ A description of the data can be found in:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 #Variables
+
+There are 68 variables in our dataset. 
+The first variable is "subject" and has values from 1 to 30 indicating the different subjects from which data was collected.
+The second variable is "activity" and includes 6 types of activities:
  
-There were 30 individual subjects in the test. They are represented by the arbitrary values of numbers one through thirty as identifying indicators (subject ids).
-
-Accelerometer and gyroscope readings were analyzed for six types of activities:
-
 walking
 walking_upstairs
 walking_downstairs
 sitting
 standing
 laying
-The means and standard deviations for 66 measures have been averaged over time for each test subject. Specifically,my handling of the original data resulted in only collecting the measures of mean() and std() for each measure and required the measure have both. Some measures that included the term mean were not included here as a result because the derived data set described here is only dealing with the means and accompanying standard deviations of the assessements of the measures.
 
+Accelerometer and gyroscope readings were analyzed for six types of activities. From the raw dataset, only the means and standard deviations where chosen, resulting in 66 different variables. 
 There are no units for these measures as they are in fact ratios derived by dividing by their range to normalize the data. 
- 
+The variables in our dataset were:
+
  [1] "subject"                                      
  [2] "activity"                                     
  [3] "timeBodyAccelerometerMeanX"   : mean acceleration of the body in x-axis                
@@ -86,14 +87,22 @@ There are no units for these measures as they are in fact ratios derived by divi
 [60] "frequencyBodyGyroscopeStdDevZ"  : std deviation of the frequency domain signals of angular velocity of the body in z-axis of the phone              
 [61] "frequencyBodyAccelerometerMagnitudeMean"     : mean magnitude of the frequency domain signals of the acceleration of the body 
 [62] "frequencyBodyAccelerometerMagnitudeStdDev"   : std deviation of the frequency domain signals of the magnitude of the acceleration of the body 
-[63] "frequencyBodyAccelerometerJerkMagnitudeMean" : mean magnitude of the frequency domain signals of the maganitude of acceleration of the body during jerk signals 
+[63] "frequencyBodyAccelerometerJerkMagnitudeMean" : mean magnitude of the frequency domain signals of the magnitude of acceleration of the body during jerk signals 
 [64] "frequencyBodyAccelerometerJerkMagnitudeStdDev": std deviation of the frequency domain signals of the magnitude of the acceleration of the body during jerk signals
 [65] "frequencyBodyGyroscopeMagnitudeMean"      : mean magnitude of the frequency domain signals of the angular velocity of the body    
 [66] "frequencyBodyGyroscopeMagnitudeStdDev"    : std deviation of the frequency domain signals of the magnitude of the angular velocity of the body    
 [67] "frequencyBodyGyroscopeJerkMagnitudeMean"  : mean magnitude of the frequency domain signals of the angular velocity of the body during jerk signals    
 [68] "frequencyBodyGyroscopeJerkMagnitudeStdDev" : std deviation of the frequency domain signals of the magnitude of the angular velocity of the body during jerk signals
 
+In the variable names, the standard deviation is abbreviated StdDev. Those measures with accelerometer in the name indicated acceleration readings and those with gyroscope in the name reference to angular velocity. The differentiation into signals from the body and gravity are maintained as in the original feature descriptors. Jerk signals are described with descriptor during jerk signals. I have used indicated those derived from Fast Fourier Transforms (FFTs) as pertaining to frequency domain signals and those where the magnitude (See the original features_info.txt for more information.)
 
+I want to comment on my choices for descriptive variables names. For tidy data, the course stresses it is best to keep variable names clear but avoid periods, underscores, or whitespaces. In this case I have chosen to use camel case so the long names are more readable. I have thus, avoided periods, underscores, dashes, spaces.
+
+The names were based on those provided in the following files from the original data set:
+
+features.txt
+features_info.txt and
+README.txt
 
 
 
